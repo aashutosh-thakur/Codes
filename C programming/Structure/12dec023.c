@@ -15,7 +15,7 @@ int main()
     printf("Enter Date of birth mm/dd/yy: ");
     scanf("%d %d %d",&info.dob,&info.dob,&info.dob);
     printf("Enter Current Date mm/dd/yy:");
-    scanf("%d %d %d", &info.cd,&info.cd,&info.cd);
+    scanf("%d %d %d", &info.cd ,&info.cd ,&info.cd);
     info.curage = info.cd-info.dob;
     printf("%d is the age",info.curage);
 }
