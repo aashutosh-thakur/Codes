@@ -2,43 +2,39 @@
 #include<stdio.h>
 int main()
 {
-    int n,i;
-    printf("Enter the size of array: ");
-    scanf("%d",&n);
-    int a[n],b[n],c[n],s[n],p[n];
-    for(i=0;i<n;i++)
+    int size,temp=0;
+    printf("Enter the size: ");
+    scanf("%d",&size);
+    int i,j,a[size],b[size];
+    for(i=0;i<size;i++)
     {
-        printf("Enter the value of a[%d]: ",i+1);
+        printf("Value of a[%d]: ",i);
         scanf("%d",&a[i]);
     }
-    for(i=0;i<n;i++)
+    for(i=0;i<size;i++)
     {
-        if (s[i]<a[i]);
-        {
-            s[i]=a[i];
-        }
-    }
-    for(i=0;i<n;i++)
-        {
-           printf("%d",s[i]);
-           printf("\n");
-        }
-        
-    
-    
-    for(i=0;i<n;i++)
-    {
-        printf("Enter the value of b[%d]: ",i+1);
+        printf("Value of b[%d]: ",i);
         scanf("%d",&b[i]);
     }
+    for(i=0;i<size;i++)
     {
-        if (p[i]<b[i]);
-        {
-            p[i]=b[i];
-        }
+        a[size+i]=b[i];
     }
-    for(i=0;i<n;i++)
+    for(i=0;i<size+size;i++)
     {
-        printf("\n%d",p[i]);
+        printf("Value after merge: %d\n",a[i]);
+    }
+    for(i=0;i<size+size;i++)
+    {
+        for(j=i+1;j<size+size;j++)
+        {
+            if(a[i]>a[j])
+            {
+                temp= a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+        }
+        printf("Sorted value are: %d\n",a[i]); 
     }
 }
