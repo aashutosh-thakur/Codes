@@ -1,7 +1,7 @@
 #include<stdio.h>
 #define maxsize 5
 int insert();
-int delete();
+int delete1();
 int display();
 int queue[maxsize];
 int rare=-1,front=0;
@@ -18,7 +18,7 @@ int main()
         insert();
         goto start;
         case 2:
-        delete();
+        delete1();
         goto start;
         case 3:
         display();
@@ -42,7 +42,7 @@ int insert()
         queue[rare]=n;
     }
 }
-int delete()
+int delete1()
 {
     int n;
     if(front>rare)
