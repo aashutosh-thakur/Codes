@@ -4,7 +4,7 @@ int insert();
 int delete1();
 int display();
 int queue[maxsize];
-int rare=-1,front=0;
+int rear=-1,front=0;
 int main()
 {
     int choice;
@@ -31,21 +31,21 @@ int main()
 int insert()
 {
     int n;
-    if(rare==maxsize-1)
+    if(rear==maxsize-1)
     {
         printf("Queue is overflow\n");
     }
     else{
         printf("enter an element: ");
         scanf("%d",&n);
-        rare++;
-        queue[rare]=n;
+        rear++;
+        queue[rear]=n;
     }
 }
 int delete1()
 {
     int n;
-    if(front>rare)
+    if(front>rear)
     {
         printf("Queue is empty\n");
     }
@@ -57,12 +57,12 @@ int delete1()
 }
 int display()
 {
-    if(front>rare)
+    if(front>rear)
     {
         printf("Queue is empty\n");
     }
     else{
-        for(int i=front;i<=rare;i++)
+        for(int i=front;i<=rear;i++)
         {
         printf("%d\n",queue[i]);
         }
