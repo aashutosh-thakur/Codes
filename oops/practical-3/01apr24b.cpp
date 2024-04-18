@@ -3,7 +3,8 @@
 using namespace std;
 int main()
 {
-    int c,f,n;
+    float c,f;
+    int n;
     cout<<"Press"<<endl<<"0- For exit"<<endl<<"1- For C to F"<<endl<<"2- For F to C"<<endl;
     cin>>n;
     switch(n)
