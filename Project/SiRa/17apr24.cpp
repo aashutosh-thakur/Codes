@@ -52,7 +52,7 @@ int sira::loginPatient()
             }
             else
             {
-                cout<<"You have "<<k--<<" attempt left\n";
+                cout<<"You have "<<k--<<" attempt left\nYour account will be blocked\n";
             }
                 goto start;
             }    
@@ -113,8 +113,10 @@ void sira::signUpPatient()
     cout<<"Enter your mail Id: ";cin>>k;
     cout<<"Enter your number: ";cin>>j;
     cout<<"Enter citizenship ID: ";cin>>f;
-    cout<<"Enter Default Number: ";cin>>g;
-    cout<<"Enter a unique Number: ";cin>>h;
+    cout<<"Enter Default(Phone) Number: ";cin>>g;
+    cout<<"Your a unique Number: ";
+    int abc=10000;
+    cout<<rand()%abc<<endl;
     cout<<"Enter a user ID(must be greater than 4 digit): ";cin>>i;
     cout<<"Enter password: ";cin>>e;
     f_name[count]=a;
