@@ -14,7 +14,7 @@ class XYZ:public ABC
     public:
         void display()
         {
-            cout<<"This is child class";
+            cout<<"This is child class\n";
         }
 };
 int main()
