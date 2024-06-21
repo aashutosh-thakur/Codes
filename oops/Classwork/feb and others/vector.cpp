@@ -3,7 +3,7 @@
 using namespace std;
 void sortss(vector<int>& v)
 {
-    v.sort(v.begin(),v.end());
+    //v.sort(v.begin(),v.end());
 }
 int main()
 {
