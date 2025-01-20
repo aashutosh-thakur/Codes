@@ -7,3 +7,6 @@ print("List of fruits: ", fruits)
 #Define a list of mixed data types
 mixed_list=[1,'apple',True,3.14]
 print("List of mixed data types: ", mixed_list)
+print(type(numbers))
+print(type(fruits))
+print(type(mixed_list))
