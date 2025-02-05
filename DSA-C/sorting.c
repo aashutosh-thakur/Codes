@@ -79,7 +79,8 @@ void selection_sort(int array[],int size)
 
 int main()
 {
-	int size,choose;
+	int size;
+	int choose;
 	printf("Enter the size of array: ");
 	scanf("%d",&size);
 	int array[size];
