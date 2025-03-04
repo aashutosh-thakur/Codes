@@ -10,7 +10,6 @@ for i in range(total_entry):
     Age=int(input("Enter your Age: "))
     Grade=input("Enter Your Grade: ")
     student_detail[Enrollment]={'Name': Name, 'Age': Age,'Grade': Grade}
-
 search=int(input("Enter the enrollment to search: "))
 if search in student_detail:
     record=student_detail[search]
