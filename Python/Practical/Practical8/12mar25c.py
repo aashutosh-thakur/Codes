@@ -2,14 +2,13 @@
 # Test case rotating "Hello World" by
 # 1 position results in "World Hello".
 def rotate_sentence(sentence, n):
-    sentence.split()
-    word=''
-    words=''
-    for i in range(n, len(sentence)):
-        word.join()
-    for j in range(n):
-        words.join()
-    print(word+words)
+    words=sentence.split()
+    n=n%len(words)
+    lista=words[-n:]
+    listb=words[:-n]
+    final_list=lista+listb
+    return ' '.join(final_list) 
 sentence=input("Enter the sentence: ")
 n=int(input("Enter total rotation: "))
-rotate_sentence(sentence, n)
+final=rotate_sentence(sentence, n)
+print(final)
