@@ -13,7 +13,6 @@ obj.asdf = 100
 print("Dynamic attribute:", obj.asdf)
 # Deleting dynamic attribute
 del obj.asdf
-
 obj = MyClass()
 obj.attr1=42 # Triggers __setattr__, prints: setting attribute 'attr1' to '41'
 del obj.attr1 # Triggers __delattr__, prints: Deleting attribute 'attr1'
