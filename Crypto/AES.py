@@ -1,0 +1,10 @@
+sentence=input("Enter the sentence: ")
+key=input("Enter the key: ")
+key=key.encode().hex()
+key = bin(int(key, 16))[2:]
+sentence=sentence.encode().hex()
+sentence = bin(int(sentence, 16))[2:]
+if len(key)<=128:
+    key = key.zfill(128)
+if len(sentence)<=128:
+    sentence = sentence.zfill(128)
